@@ -10,6 +10,7 @@ public class App {
     private JPanel jPanel;
     private JLabel lable1;
     private JButton ButtonExit;
+    private JButton button2;
 
     public static void main(String[] args) {
         JFrame jFrame=new JFrame("برنامه من");
