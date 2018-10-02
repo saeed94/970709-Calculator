@@ -14,7 +14,7 @@ public class App {
     static JFrame jFrame2;
 
     public static void main(String[] args) {
-        jFrame = new JFrame("برنامه من");
+        jFrame = new JFrame("My Simple Calculator");
         jFrame.setPreferredSize(new Dimension(440, 200));
         jFrame.setContentPane(new App().jPanel);
         jFrame.setDefaultCloseOperation(jFrame.EXIT_ON_CLOSE);
@@ -29,21 +29,21 @@ public class App {
         buttonInfo.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                JOptionPane.showMessageDialog(null, "برنامه ماشین حساب ساده نوشته شده با زبان جاوا");
+                JOptionPane.showMessageDialog(null, "Simple Calculator App Create With Java In IntelliJ IDEA.");
             }
         });
+
         buttonExit.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
                 System.exit(0);
-                //exit
             }
         });
+
         buttonCalc.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-
-                jFrame2 = new JFrame("22222222");
+                jFrame2 = new JFrame("Calculator");
                 jFrame2.setPreferredSize(new Dimension(320, 450));
                 jFrame2.setContentPane(new Form2().jPanel);
                 jFrame2.setDefaultCloseOperation(jFrame2.HIDE_ON_CLOSE);

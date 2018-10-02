@@ -14,7 +14,7 @@
         </constraints>
         <properties>
           <font name="Monospaced" size="14" style="1"/>
-          <text value="درباره برنامه"/>
+          <text value="Info App"/>
         </properties>
       </component>
       <component id="e0525" class="javax.swing.JButton" binding="buttonCalc">
@@ -23,7 +23,7 @@
         </constraints>
         <properties>
           <font name="Monospaced" size="14" style="1"/>
-          <text value="ماشین حساب"/>
+          <text value="Calculator"/>
         </properties>
       </component>
       <component id="fd795" class="javax.swing.JButton" binding="buttonExit">
@@ -32,7 +32,7 @@
         </constraints>
         <properties>
           <font name="Monospaced" size="14" style="1"/>
-          <text value="خروج"/>
+          <text value="Exit"/>
         </properties>
       </component>
     </children>

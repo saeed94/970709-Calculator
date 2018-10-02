@@ -3,18 +3,18 @@
   <grid id="27dc6" binding="jPanel" layout-manager="GridLayoutManager" row-count="8" column-count="4" same-size-horizontally="true" same-size-vertically="true" hgap="2" vgap="2">
     <margin top="2" left="2" bottom="2" right="2"/>
     <constraints>
-      <xy x="20" y="20" width="320" height="450"/>
+      <xy x="20" y="20" width="332" height="450"/>
     </constraints>
     <properties/>
     <border type="none"/>
     <children>
-      <component id="ad5e7" class="javax.swing.JButton" binding="buttonClear">
+      <component id="ad5e7" class="javax.swing.JButton" binding="buttonClears">
         <constraints>
           <grid row="3" column="1" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="C"/>
         </properties>
       </component>
@@ -24,7 +24,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="7"/>
         </properties>
       </component>
@@ -34,7 +34,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="4"/>
         </properties>
       </component>
@@ -44,7 +44,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="1"/>
         </properties>
       </component>
@@ -54,7 +54,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="8"/>
         </properties>
       </component>
@@ -64,7 +64,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="5"/>
         </properties>
       </component>
@@ -74,7 +74,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="2"/>
         </properties>
       </component>
@@ -84,7 +84,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="9"/>
         </properties>
       </component>
@@ -94,7 +94,7 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="÷"/>
         </properties>
       </component>
@@ -104,7 +104,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="6"/>
         </properties>
       </component>
@@ -114,8 +114,8 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
-          <text value="*"/>
+          <font name="Consolas" size="20" style="1"/>
+          <text value="×"/>
         </properties>
       </component>
       <component id="5e8cd" class="javax.swing.JButton" binding="button3">
@@ -124,7 +124,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="3"/>
         </properties>
       </component>
@@ -134,8 +134,8 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
-          <text value="-"/>
+          <font name="Consolas" size="20" style="1"/>
+          <text value="−"/>
         </properties>
       </component>
       <component id="df010" class="javax.swing.JLabel" binding="lableResult">
@@ -144,7 +144,7 @@
         </constraints>
         <properties>
           <enabled value="true"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="26" style="1"/>
           <horizontalAlignment value="0"/>
           <text value=""/>
         </properties>
@@ -155,7 +155,7 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="="/>
         </properties>
       </component>
@@ -165,7 +165,7 @@
         </constraints>
         <properties>
           <background color="-328966"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="0"/>
         </properties>
       </component>
@@ -175,7 +175,7 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="."/>
         </properties>
       </component>
@@ -185,27 +185,17 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="+"/>
         </properties>
       </component>
-      <component id="8a56e" class="javax.swing.JLabel" binding="lableCalc">
-        <constraints>
-          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="0" hsize-policy="0" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
-        </constraints>
-        <properties>
-          <font name="B Nazanin" size="16" style="1"/>
-          <horizontalAlignment value="0"/>
-          <text value=""/>
-        </properties>
-      </component>
-      <component id="c4dae" class="javax.swing.JButton" binding="buttonClears">
+      <component id="c4dae" class="javax.swing.JButton" binding="buttonClear">
         <constraints>
           <grid row="3" column="0" row-span="1" col-span="1" vsize-policy="1" hsize-policy="3" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <text value="CE"/>
         </properties>
       </component>
@@ -215,11 +205,28 @@
         </constraints>
         <properties>
           <background color="-1118482"/>
-          <font name="B Nazanin" size="16" style="1"/>
+          <font name="Consolas" size="20" style="1"/>
           <icon value="com/sun/javafx/scene/control/skin/caspian/images/backspace-icon.png"/>
           <text value=""/>
         </properties>
       </component>
+      <scrollpane id="49946">
+        <constraints>
+          <grid row="0" column="0" row-span="1" col-span="4" vsize-policy="7" hsize-policy="7" anchor="0" fill="3" indent="0" use-parent-layout="false"/>
+        </constraints>
+        <properties/>
+        <border type="none"/>
+        <children>
+          <component id="8a56e" class="javax.swing.JLabel" binding="lableCalc">
+            <constraints/>
+            <properties>
+              <font name="Consolas" size="20" style="1"/>
+              <horizontalAlignment value="2"/>
+              <text value=""/>
+            </properties>
+          </component>
+        </children>
+      </scrollpane>
     </children>
   </grid>
 </form>
