@@ -162,17 +162,23 @@ public class Form2 extends JFrame {
         buttonDivision.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
-                if(!function.isEmpty())
-                    result= Double.parseDouble(String.valueOf(result).substring(String.valueOf(result).length()-3));
-                if (!lableCalc.getText().isEmpty()) {
-                    lableCalc.setText(lableCalc.getText() + lableResult.getText() + " ÷ ");
-                    function(function);
-                } else {
+                String calc=lableCalc.getText();
+                if(function=="*"||function=="-"||function=="+"&&!lableCalc.getText().isEmpty()) {
+                    lableCalc.setText(calc.substring(0, String.valueOf(calc).length() - 3));
+                    lableCalc.setText(lableCalc.getText() + " ÷ ");
+                    function="/";
+                    return;
+                }
+                if (lableCalc.getText().isEmpty()) {
                     lableCalc.setText(lableResult.getText() + " ÷ ");
                     result=Double.parseDouble(lableResult.getText());
                 }
+                else {
+                    lableCalc.setText(lableCalc.getText() + lableResult.getText() + " ÷ ");
+                    function(function);
+                }
+                showResult = true;
                 function="/";
-//                showResult = true;
             }
         });
 
@@ -180,51 +186,59 @@ public class Form2 extends JFrame {
             @Override
             public void actionPerformed(ActionEvent e) {
                 String calc=lableCalc.getText();
-                if(!function.isEmpty())
-                    lableCalc.setText(calc.substring(0,String.valueOf(calc).length()-3));
-                if (!lableCalc.getText().isEmpty()) {
-                    lableCalc.setText(lableCalc.getText() + lableResult.getText() + " × ");
-                    function(function);
-                } else {
+                if(function=="/"||function=="-"||function=="+"&&!lableCalc.getText().isEmpty()) {
+                    lableCalc.setText(calc.substring(0, String.valueOf(calc).length() - 3));
+                    lableCalc.setText(lableCalc.getText() + " × ");
+                    function="*";
+                    return;
+                }
+                if (lableCalc.getText().isEmpty()) {
                     lableCalc.setText(lableResult.getText() + " × ");
                     result=Double.parseDouble(lableResult.getText());
                 }
+                else {
+                    lableCalc.setText(lableCalc.getText() + lableResult.getText() + " × ");
+                    function(function);
+                }
+                showResult = true;
                 function="*";
-//                showResult = true;
+
             }
         });
 
         buttonSubtraction.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                function="-";
+                String calc=lableCalc.getText();
                 if(!function.isEmpty())
-                    result= Double.parseDouble(String.valueOf(result).substring(String.valueOf(result).length()-3));
-                if (!lableCalc.getText().isEmpty()) {
+                    lableCalc.setText(calc.substring(0,String.valueOf(calc).length()-3));
+                if (!lableCalc.getText().isEmpty()||showResult) {
                     lableCalc.setText(lableCalc.getText() + lableResult.getText() + " − ");
                     function(function);
                 } else {
                     lableCalc.setText(lableResult.getText() + " − ");
                     result=Double.parseDouble(lableResult.getText());
                 }
-                function="-";
-//                showResult = true;
+                showResult = true;
             }
         });
 
         buttonSum.addActionListener(new ActionListener() {
             @Override
             public void actionPerformed(ActionEvent e) {
+                function="+";
+                String calc=lableCalc.getText();
                 if(!function.isEmpty())
-                    result= Double.parseDouble(String.valueOf(result).substring(String.valueOf(result).length()-3));
-                if (!lableCalc.getText().isEmpty()) {
+                    lableCalc.setText(calc.substring(0,String.valueOf(calc).length()-3));
+                if (!lableCalc.getText().isEmpty()||showResult) {
                     lableCalc.setText(lableCalc.getText() + lableResult.getText() + " + ");
                     function(function);
                 } else {
                     lableCalc.setText(lableResult.getText() + " + ");
                     result=Double.parseDouble(lableResult.getText());
                 }
-                function="+";
-//                showResult = true;
+                showResult = true;
             }
         });
 
@@ -237,9 +251,6 @@ public class Form2 extends JFrame {
                 showResult = true;
             }
         });
-
-
-
 
 
     }
@@ -266,7 +277,6 @@ public class Form2 extends JFrame {
             else
                 lableResult.setText(String.format("%.0f", auxiliary));
         }
-        showResult=true;
     }
 
 }
